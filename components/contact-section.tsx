@@ -1,4 +1,4 @@
-// import { ContactForm } from "@/components/contact-form"
+import { ContactForm } from "./contact-form";
 
 export function ContactSection() {
   return (
@@ -9,12 +9,12 @@ export function ContactSection() {
             Entre em Contato
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl mb-8">
-            Preencha o formulário abaixo e nossa equipe entrará em contato para uma demonstração personalizada.
+            Preencha o formulário abaixo e nossa equipe entrará em contato para
+            uma demonstração personalizada.
           </p>
         </div>
-        {/* <ContactForm /> */}
+        <ContactForm />
       </div>
     </section>
-  )
+  );
 }
-

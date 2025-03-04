@@ -1,5 +1,5 @@
-import { ContactForm } from "@/components/contact-form"
-import { MapPin, Phone, Mail } from "lucide-react"
+import { ContactForm } from "@/components/contact-form";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const contactInfo = {
   address: {
@@ -12,24 +12,30 @@ const contactInfo = {
   },
   phone: "+55 11 3456-7890",
   email: "contato@aigen.com.br",
-}
+};
 
 export function ContactPageContent() {
   return (
     <div className="container relative z-10 py-24">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Entre em Contato</h1>
+        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+          Entre em Contato
+        </h1>
         <p className="mt-4 text-lg text-gray-600 md:text-xl">
-          Estamos aqui para ajudar sua empresa a crescer com inteligência artificial
+          Estamos aqui para ajudar sua empresa a crescer com inteligência
+          artificial
         </p>
       </div>
 
       <div className="grid gap-12 lg:grid-cols-2">
         <div>
           <div className="rounded-2xl bg-white p-8 shadow-lg h-fit">
-            <h2 className="text-2xl font-bold tracking-tight">Informações de Contato</h2>
+            <h2 className="text-2xl font-bold tracking-tight">
+              Informações de Contato
+            </h2>
             <p className="mt-2 text-gray-600">
-              Entre em contato conosco através dos canais abaixo ou preencha o formulário.
+              Entre em contato conosco através dos canais abaixo ou preencha o
+              formulário.
             </p>
 
             <div className="mt-8 space-y-6">
@@ -58,7 +64,10 @@ export function ContactPageContent() {
                 <div>
                   <h3 className="font-semibold">Telefone</h3>
                   <p className="text-gray-600">
-                    <a href={`tel:${contactInfo.phone.replace(/\D/g, "")}`} className="hover:text-blue-600">
+                    <a
+                      href={`tel:${contactInfo.phone.replace(/\D/g, "")}`}
+                      className="hover:text-blue-600"
+                    >
                       {contactInfo.phone}
                     </a>
                   </p>
@@ -72,7 +81,10 @@ export function ContactPageContent() {
                 <div>
                   <h3 className="font-semibold">Email</h3>
                   <p className="text-gray-600">
-                    <a href={`mailto:${contactInfo.email}`} className="hover:text-blue-600">
+                    <a
+                      href={`mailto:${contactInfo.email}`}
+                      className="hover:text-blue-600"
+                    >
                       {contactInfo.email}
                     </a>
                   </p>
@@ -93,12 +105,16 @@ export function ContactPageContent() {
 
         <div className="space-y-8">
           <div className="rounded-2xl bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold tracking-tight mb-6">Formulário de Contato</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6">
+              Formulário de Contato
+            </h2>
             <ContactForm />
           </div>
 
           <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-8 text-white">
-            <h2 className="text-2xl font-bold tracking-tight">Por que escolher a AI Gen?</h2>
+            <h2 className="text-2xl font-bold tracking-tight">
+              Por que escolher a AI Gen?
+            </h2>
             <ul className="mt-4 space-y-2">
               <li className="flex items-center space-x-2">
                 <span className="text-blue-200">•</span>
@@ -121,6 +137,5 @@ export function ContactPageContent() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

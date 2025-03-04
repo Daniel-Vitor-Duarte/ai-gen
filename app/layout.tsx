@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Lato, Geist } from "next/font/google";
 import "./globals.css";
-// import { ToastProvider } from "@/components/ui/use-toast";
+import { Toaster } from "@/components/ui/sonner";
 
 const lato = Lato({
   weight: ["700"],
@@ -25,10 +25,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${lato.className} ${geist.className}`}>
       <body>
-        {/* Uncomment if needed */}
-        {/* <ToastProvider> */}
         {children}
-        {/* </ToastProvider> */}
+        <Toaster />
       </body>
     </html>
   );
