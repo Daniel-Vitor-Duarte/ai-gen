@@ -34,7 +34,7 @@ export default function Hero() {
 
   return (
     <main className="flex flex-col w-full">
-      <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
+      <div className="relative lg:pt-[8rem] pt-[5.5rem] w-full flex flex-col items-center justify-center overflow-hidden bg-black">
         <MainNav />
         <Particles
           id="tsparticles"
@@ -97,7 +97,7 @@ export default function Hero() {
             </p>
             <Button
               size="lg"
-              className="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium px-8 py-3 rounded-lg transition-all duration-200 transform hover:scale-105"
+              className="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-8 lg:py-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 lg:text-[1.5rem] "
             >
               Solicitar Demonstração
             </Button>
@@ -105,7 +105,7 @@ export default function Hero() {
         </div>
         <button
           onClick={scrollToNextSection}
-          className="absolute left-1/2 top-1/2 mt-48 -translate-x-1/2 animate-bounce cursor-pointer rounded-full p-2 transition-colors hover:bg-white/10"
+          className=" mt-12 animate-bounce cursor-pointer rounded-full p-2 transition-colors hover:bg-white/10"
           aria-label="Scroll to benefits section"
         >
           <ChevronDown className="h-8 w-8 text-white/70" />

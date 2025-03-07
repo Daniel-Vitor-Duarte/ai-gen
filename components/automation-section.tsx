@@ -14,7 +14,7 @@ const integrations = [
     category: "Messaging",
     tools: [
       { name: "WhatsApp API", icon: MessageSquare },
-      { name: "AI Humanizada", icon: Bot },
+      { name: "Chat AI", icon: Bot },
     ],
   },
   {
@@ -35,11 +35,11 @@ const integrations = [
 
 export function AutomationSection() {
   return (
-    <section className="w-full bg-black py-32">
+    <section className="w-full bg-black lg:py-20 py-12">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-4">
-            Automação Inteligente: Do Lead à Conversão
+            Automação Inteligente: Gerando Leads
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl mb-12">
             Nosso sistema identifica, qualifica e converte leads automaticamente, integrando atendimento humano quando
@@ -58,7 +58,7 @@ export function AutomationSection() {
 
           <Button
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium px-8 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 mb-20"
+            className="mt-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold px-8 lg:py-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 lg:text-[1.5rem] "
           >
             Solicitar Demonstração
           </Button>

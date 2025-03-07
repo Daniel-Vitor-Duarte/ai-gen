@@ -6,6 +6,7 @@ import { Globe, Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Logo from "@/public/icons/logo.png"
 
 const mainNavItems = [
   { href: "/sobre-nos", label: "Sobre Nós" },
@@ -30,8 +31,8 @@ export function MainNav() {
 
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-black/50 backdrop-blur-lg">
-      <div className="container flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-6">
+      <div className="container flex h-16 items-center lg:justify-between pr-12">
+        <div className="flex items-center gap-24">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button
@@ -54,7 +55,7 @@ export function MainNav() {
                     {label}
                   </Link>
                 ))}
-                <div className="mt-4 border-t border-gray-800 pt-4">
+                {/* <div className="mt-4 border-t border-gray-800 pt-4">
                   <div className="flex items-center space-x-4">
                     {socialLinks.map(({ href, label }) => (
                       <Link
@@ -69,13 +70,17 @@ export function MainNav() {
                       </Link>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </div>
             </SheetContent>
           </Sheet>
-          <Link href="/" className="text-xl font-bold text-white">
-            Logo
-          </Link>
+          <a href="/" className="">
+            <Image
+              src={Logo}
+              alt="Logo"
+              className="w-[8rem]"
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
@@ -101,7 +106,7 @@ export function MainNav() {
           ))}
         </nav>
 
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4">
           <div className="hidden lg:flex items-center space-x-4">
             {socialLinks.map(({ href, label }) => (
               <Link
@@ -120,7 +125,7 @@ export function MainNav() {
             <Globe className="h-5 w-5" />
             <span className="sr-only">Toggle language</span>
           </Button>
-        </div>
+        </div> */}
       </div>
     </header>
   )

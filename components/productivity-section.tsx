@@ -38,7 +38,7 @@ const plugin = Autoplay({ delay: 4000, stopOnInteraction: true })
 
 export function ProductivitySection() {
   return (
-    <section className="w-full bg-black py-32">
+    <section className="w-full bg-black">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-16 relative backdrop-blur-sm bg-black/20 p-8 rounded-2xl">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-4">

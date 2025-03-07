@@ -123,7 +123,7 @@ export function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6 text-accent"
+          className="space-y-3 text-accent"
         >
           <FormField
             control={form.control}
@@ -348,10 +348,10 @@ export function ContactForm() {
               )}
             />
           </div>
-          <div className="space-y-2">
+          <div className="lg:mt-2">
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
+              className="w-full bg-gradient-to-r text-lg font-semibold from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Enviando..." : "Enviar"}
