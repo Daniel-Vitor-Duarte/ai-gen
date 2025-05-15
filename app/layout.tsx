@@ -13,7 +13,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "AI Gen",
+  title: "AIG",
   description: "Automação e Inteligência Artificial aplicados na sua empresa",
 };
 

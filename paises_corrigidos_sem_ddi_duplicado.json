@@ -1,17 +1,4 @@
-import { z } from "zod";
-
-export const contactFormSchema = z.object({
-  name: z.string().min(2, "Nome deve ter pelo menos 2 caracteres"),
-  email: z.string().email("Email inválido"),
-  ddi: z.string(),
-  phone: z
-    .string()
-    .regex(/^\(\d{2}\)\s?\d?\d{4}-\d{4}$/, "Número de telefone inválido"),
-});
-
-export type ContactFormData = z.infer<typeof contactFormSchema>;
-
-export const countries = [
+[
   {
     "pais": "EUA",
     "img": "",

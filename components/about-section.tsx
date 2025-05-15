@@ -7,7 +7,7 @@ const sections = [
     id: "mission",
     title: "Nossa Missão",
     subtitle: "Impulsionando o progresso com IA",
-    content: `A AI Gen nasceu da paixão pela tecnologia e da visão de um futuro onde a inteligência artificial não apenas automatiza processos, mas também personaliza e humaniza o atendimento ao cliente. Desde o lançamento do ChatGPT, observamos o potencial revolucionário da IA e, em 2024, decidimos unir forças para criar soluções inovadoras que transformam empresas, tornando-as mais produtivas e eficientes.
+    content: `A AIG nasceu da paixão pela tecnologia e da visão de um futuro onde a inteligência artificial não apenas automatiza processos, mas também personaliza e humaniza o atendimento ao cliente. Desde o lançamento do ChatGPT, observamos o potencial revolucionário da IA e, em 2024, decidimos unir forças para criar soluções inovadoras que transformam empresas, tornando-as mais produtivas e eficientes.
 
     Nossa missão é clara: impulsionar o progresso. Acreditamos que a evolução tecnológica deve ser utilizada para otimizar operações, melhorar a experiência do cliente e permitir que negócios alcancem seu máximo potencial. Trabalhamos para ajudar empresas a crescer, eliminando tarefas repetitivas e permitindo que gestores e equipes foquem no que realmente importa: inovação e estratégia.`,
     image: "/placeholder.svg?height=400&width=600",
@@ -17,7 +17,7 @@ const sections = [
     id: "values",
     title: "Nossos Valores",
     subtitle: "Razão, integridade e busca pela excelência",
-    content: `Na AI Gen, guiamos nossas ações por três pilares fundamentais: razão, integridade e busca pela excelência. Acreditamos que a racionalidade e o pensamento independente são as chaves para criar soluções inovadoras. Nossa transparência e compromisso com a verdade fortalecem a confiança com nossos clientes e parceiros. Acima de tudo, buscamos excelência em tudo o que fazemos, desafiando constantemente o status quo para entregar o melhor resultado possível.`,
+    content: `Na AIG, guiamos nossas ações por três pilares fundamentais: razão, integridade e busca pela excelência. Acreditamos que a racionalidade e o pensamento independente são as chaves para criar soluções inovadoras. Nossa transparência e compromisso com a verdade fortalecem a confiança com nossos clientes e parceiros. Acima de tudo, buscamos excelência em tudo o que fazemos, desafiando constantemente o status quo para entregar o melhor resultado possível.`,
     image: "/placeholder.svg?height=400&width=600",
     icon: Award,
   },
@@ -32,7 +32,7 @@ const sections = [
   {
     id: "team",
     title: "Nossa Equipe",
-    subtitle: "Os especialistas por trás da AI Gen",
+    subtitle: "Os especialistas por trás da AIG",
     content:
       "Nossa equipe traz uma combinação única de habilidades para criar soluções eficientes e sob medida para cada cliente.",
     team: [
@@ -60,7 +60,7 @@ const sections = [
   {
     id: "differentials",
     title: "Nossos Diferenciais",
-    subtitle: "Por que a AI Gen é única",
+    subtitle: "Por que a AIG é única",
     content: `O maior desafio que enfrentamos é a resistência à mudança. Muitas empresas ainda hesitam em adotar a inteligência artificial, sem perceber que ela não é uma ameaça, mas sim uma ferramenta poderosa para crescimento. Estamos aqui para mudar essa mentalidade, demonstrando na prática como a IA pode otimizar processos, reduzir custos e gerar mais oportunidades.
 
     O que nos diferencia no mercado é a nossa abordagem personalizada. Não acreditamos em soluções genéricas. Desenvolvemos sistemas que realmente entendem e se adaptam às necessidades dos clientes, combinando IA avançada, automação e programação de alto nível.
@@ -72,10 +72,10 @@ const sections = [
   {
     id: "future",
     title: "Planos para o Futuro",
-    subtitle: "A evolução da AI Gen e os próximos passos",
+    subtitle: "A evolução da AIG e os próximos passos",
     content: `Nosso foco é expandir e aprimorar nossas soluções de captura de leads e atendimento humanizado, garantindo que empresas tenham uma comunicação eficiente e personalizada com seus clientes. Além disso, visamos ampliar nossos serviços para incluir tráfego pago e criação de landing pages otimizadas, oferecendo uma solução completa para impulsionar negócios no ambiente digital.
 
-    Estamos apenas começando. O futuro da inteligência artificial no Brasil é promissor, e a AI Gen está pronta para liderar essa transformação.`,
+    Estamos apenas começando. O futuro da inteligência artificial no Brasil é promissor, e a AIG está pronta para liderar essa transformação.`,
     image: "/placeholder.svg?height=400&width=600",
     icon: TrendingUp,
   },
@@ -112,7 +112,7 @@ export function AboutSection() {
                         alt={member.name}
                         width={300}
                         height={300}
-                        className="w-full object-cover aspect-square"
+                        className={`w-full object-cover aspect-square`}
                       />
                       <div className="p-6 space-y-2">
                         <h3 className="font-bold text-xl">{member.name}</h3>
@@ -126,7 +126,7 @@ export function AboutSection() {
             )}
           </div>
 
-          {section.id !== "team" && (
+          {section.id !== "team" && section.id !== "differentials" &&  (
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl" />
               <Image
@@ -134,7 +134,7 @@ export function AboutSection() {
                 alt={section.title}
                 width={600}
                 height={400}
-                className="relative rounded-2xl w-full object-cover"
+                className={`relative rounded-2xl w-full object-cover`}
               />
             </div>
           )}

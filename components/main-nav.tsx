@@ -2,15 +2,16 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Globe, Menu } from "lucide-react"
+import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import Logo from "@/public/icons/logo.png"
+import Logo from "@/public/icons/logo.svg"
 
 const mainNavItems = [
+  { href: "/", label: "Home" },
   { href: "/sobre-nos", label: "Sobre Nós" },
-  { href: "/casos-de-uso", label: "Casos de Uso" },
+  // { href: "/casos-de-uso", label: "Casos de Uso" },
   { href: "/blog", label: "Blog" },
   { href: "/contato", label: "Contato" },
 ]
@@ -25,9 +26,9 @@ export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
   const [language, setLanguage] = useState<"pt" | "en">("pt")
 
-  const toggleLanguage = () => {
-    setLanguage(language === "pt" ? "en" : "pt")
-  }
+  // const toggleLanguage = () => {
+  //   setLanguage(language === "pt" ? "en" : "pt")
+  // }
 
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-black/50 backdrop-blur-lg">
@@ -78,7 +79,7 @@ export function MainNav() {
             <Image
               src={Logo}
               alt="Logo"
-              className="w-[8rem]"
+              className="w-[5rem]"
             />
           </a>
         </div>
@@ -90,18 +91,6 @@ export function MainNav() {
               <Link href={href} className="text-sm font-medium text-white hover:text-gray-300 transition-colors">
                 {label}
               </Link>
-              {href !== "/sobre-nos" && href !== "/contato" && (
-                <div className="absolute hidden group-hover:block -top-12 left-1/2 -translate-x-1/2 bg-black/90 rounded-lg p-2 z-50">
-                  <Image
-                    src="/placeholder.svg?height=30&width=30"
-                    alt="Em construção"
-                    width={30}
-                    height={30}
-                    className="opacity-80"
-                  />
-                  <span className="text-xs text-white whitespace-nowrap">Em construção</span>
-                </div>
-              )}
             </div>
           ))}
         </nav>

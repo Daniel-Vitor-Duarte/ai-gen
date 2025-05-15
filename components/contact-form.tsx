@@ -262,18 +262,18 @@ export function ContactForm() {
                       <div className="p-1">
                         {countries.map((country) => (
                           <SelectItem
-                            key={`${country.value}-${country.label}`}
-                            value={country.value}
+                            key={`${country.ddi}-${country.pais}`}
+                            value={String(country.ddi)}
                             className="px-3 py-2"
                           >
                             <div className="flex items-center gap-3">
                               <img
-                                src={country.flag || "/placeholder.svg"}
-                                alt={`Bandeira ${country.label}`}
+                                src={country.img || "/placeholder.svg"}
+                                alt={`Bandeira ${country.pais}`}
                                 className="w-5 h-3 object-cover rounded-sm"
                               />
                               <span className="font-medium">
-                                {country.value}
+                                {country.ddi}
                               </span>
                             </div>
                           </SelectItem>

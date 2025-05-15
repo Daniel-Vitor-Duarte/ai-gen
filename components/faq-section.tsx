@@ -2,12 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "O que é a AI Gen?",
+    question: "O que é a AIG?",
     answer:
-      "A AI Gen é uma empresa especializada em automação inteligente e prospecção de clientes com Inteligência Artificial. Nosso foco é ajudar empresas a escalar operações, reduzir custos e aumentar vendas por meio da integração de IA, automação de leads e atendimento híbrido.",
+      "A AIG é uma empresa especializada em automação inteligente e prospecção de clientes com Inteligência Artificial. Nosso foco é ajudar empresas a escalar operações, reduzir custos e aumentar vendas por meio da integração de IA, automação de leads e atendimento híbrido.",
   },
   {
-    question: "Como a AI Gen pode ajudar minha empresa?",
+    question: "Como a AIG pode ajudar minha empresa?",
     answer:
       "Oferecemos soluções que automatizam a prospecção de clientes, otimizam o atendimento e melhoram a conversão de vendas. Nossos serviços incluem chatbots inteligentes, integração com CRM, automação de follow-ups e personalização de comunicação, garantindo eficiência e um atendimento mais humanizado.",
   },
@@ -17,12 +17,12 @@ const faqItems = [
       "Nossa tecnologia busca e qualifica leads automaticamente, entrando em contato inicial e realizando follow-ups de forma estratégica. Com integração ao seu CRM, organizamos e nutrimos os leads para aumentar a taxa de conversão de vendas.",
   },
   {
-    question: "A AI Gen oferece suporte e personalização dos serviços?",
+    question: "A AIG oferece suporte e personalização dos serviços?",
     answer:
       "Sim! Entendemos que cada empresa é única, por isso personalizamos nossas soluções conforme as necessidades do seu negócio. Também oferecemos suporte contínuo para garantir que tudo funcione da melhor forma.",
   },
   {
-    question: "Quais tipos de empresas podem se beneficiar com a AI Gen?",
+    question: "Quais tipos de empresas podem se beneficiar com a AIG?",
     answer:
       "Atendemos principalmente agências de marketing digital, empresas B2B de tecnologia e SaaS, consultorias e prestadores de serviços premium, além de e-commerces e negócios digitais que querem aumentar conversão e melhorar o atendimento.",
   },
@@ -32,17 +32,17 @@ const faqItems = [
       "Oferecemos planos flexíveis que se adaptam ao tamanho e às necessidades do seu negócio. O investimento varia de acordo com as funcionalidades escolhidas e o volume de uso. Entre em contato conosco para uma avaliação personalizada.",
   },
   {
-    question: "Como faço para contratar a AI Gen?",
+    question: "Como faço para contratar a AIG?",
     answer:
       "Entre em contato pelo nosso site ou WhatsApp e nossa equipe agendará uma reunião para entender suas necessidades e apresentar a melhor solução para o seu negócio.",
   },
   {
-    question: "Em quanto tempo verei resultados com a AI Gen?",
+    question: "Em quanto tempo verei resultados com a AIG?",
     answer:
       "Os resultados variam conforme a estrutura do seu negócio, mas normalmente nossos clientes percebem melhorias na eficiência operacional e no aumento de conversões já nos primeiros meses de implementação.",
   },
   {
-    question: "A AI Gen pode ser integrada com meu CRM e outras ferramentas?",
+    question: "A AIG pode ser integrada com meu CRM e outras ferramentas?",
     answer:
       "Sim! Nossas soluções são desenvolvidas para integrar com CRMs, plataformas de vendas, WhatsApp, redes sociais e outras ferramentas que sua empresa já utiliza, garantindo uma operação mais eficiente.",
   },

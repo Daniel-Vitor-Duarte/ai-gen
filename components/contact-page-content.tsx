@@ -113,7 +113,7 @@ export function ContactPageContent() {
 
           <div className="rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 p-8 text-white">
             <h2 className="text-2xl font-bold tracking-tight">
-              Por que escolher a AI Gen?
+              Por que escolher a AIG?
             </h2>
             <ul className="mt-4 space-y-2">
               <li className="flex items-center space-x-2">
