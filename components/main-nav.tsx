@@ -16,15 +16,15 @@ const mainNavItems = [
   { href: "/contato", label: "Contato" },
 ]
 
-const socialLinks = [
-  { href: "https://twitter.com", label: "Twitter", icon: "twitter.svg" },
-  { href: "https://linkedin.com", label: "LinkedIn", icon: "linkedin.svg" },
-  { href: "https://instagram.com", label: "Instagram", icon: "instagram.svg" },
-]
+// const socialLinks = [
+//   { href: "https://twitter.com", label: "Twitter", icon: "twitter.svg" },
+//   { href: "https://linkedin.com", label: "LinkedIn", icon: "linkedin.svg" },
+//   { href: "https://instagram.com", label: "Instagram", icon: "instagram.svg" },
+// ]
 
 export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
-  const [language, setLanguage] = useState<"pt" | "en">("pt")
+  // const [language, setLanguage] = useState<"pt" | "en">("pt")
 
   // const toggleLanguage = () => {
   //   setLanguage(language === "pt" ? "en" : "pt")
@@ -75,13 +75,13 @@ export function MainNav() {
               </div>
             </SheetContent>
           </Sheet>
-          <a href="/" className="">
+          <Link href="/" className="">
             <Image
               src={Logo}
               alt="Logo"
               className="w-[5rem]"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

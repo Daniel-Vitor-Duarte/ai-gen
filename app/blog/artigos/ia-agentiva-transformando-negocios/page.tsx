@@ -352,7 +352,7 @@ export default function IAAgentivaPage() {
         </div>
 
         {/* Author */}
-        <div className="mt-12 border-t border-gray-800 pt-8">
+        {/* <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex items-center gap-4">
             <img src="/professional-headshot.png" alt="Autor" className="w-16 h-16 rounded-full" />
             <div>
@@ -362,10 +362,10 @@ export default function IAAgentivaPage() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Share */}
-        <div className="mt-8">
+        <div className="border-t border-gray-800 pt-8">
           <h4 className="text-lg font-bold mb-4">Compartilhe este artigo</h4>
           <div className="flex gap-3">
             <Button variant="outline" size="icon" className="rounded-full">
@@ -388,63 +388,7 @@ export default function IAAgentivaPage() {
         </div>
       </article>
 
-      {/* Related Articles */}
-      <section className="relative z-10 container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold mb-8">Artigos Relacionados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=k38w4" alt="Casos de Sucesso de IA" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">Inteligência Artificial</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">6 Casos de Sucesso de IA no Atendimento ao Cliente</h3>
-              <p className="text-gray-400 mb-4">
-                Conheça como grandes empresas como Sephora, Vodafone e Alibaba estão usando IA para revolucionar o
-                atendimento ao cliente.
-              </p>
-              <Link
-                href="/blog/artigos/casos-sucesso-ia-atendimento-cliente"
-                className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200"
-              >
-                Ler mais →
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=xzwz3" alt="Futuro do CRM" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">CRM</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">O Futuro do CRM: Inteligência Artificial e Personalização</h3>
-              <p className="text-gray-400 mb-4">
-                Descubra como a IA está transformando os sistemas de CRM e criando experiências altamente
-                personalizadas.
-              </p>
-              <Link
-                href="/blog/artigos/futuro-crm-inteligencia-artificial-personalizacao"
-                className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200"
-              >
-                Ler mais →
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=gfxkw" alt="Métricas de atendimento" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">Métricas</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">
-                10 Métricas Essenciais para Avaliar seu Atendimento ao Cliente
-              </h3>
-              <p className="text-gray-400 mb-4">
-                Indicadores que toda empresa deve monitorar para garantir a excelência no atendimento ao cliente.
-              </p>
-              <Link href="#" className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200">
-                Ler mais →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Newsletter */}
       <section>

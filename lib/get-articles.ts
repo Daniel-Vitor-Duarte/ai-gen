@@ -41,7 +41,7 @@ export async function getArticleMetadata(slug: string): Promise<Article | null> 
     const date = dateMatch ? dateMatch[1].replace(/<[^>]*>/g, "").trim() : ""
 
     // Extract image using regex
-    const imageMatch = fileContent.match(/src="([^"]*)" alt="[^"]*" className="w-full h-auto rounded-lg"/)
+    const imageMatch = fileContent.match(/<img[^>]*src="([^"]+)"[^>]*className="[^"]*w-full h-auto rounded-lg[^"]*"[^>]*>/s)
     const image = imageMatch ? imageMatch[1] : "/placeholder.svg"
 
     return {

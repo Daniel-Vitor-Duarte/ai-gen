@@ -3,6 +3,7 @@ import { MainNav } from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Twitter, Facebook, Linkedin, Share2 } from "lucide-react"
 import { Newsletter } from "@/app/components/Newsletter/newsletter"
+import Cta from "@/app/Cta"
 
 export default function AutomacaoMarketingPage() {
   return (
@@ -43,7 +44,7 @@ export default function AutomacaoMarketingPage() {
         {/* Featured Image */}
         <div className="mb-12">
           <img
-            src="/marketing-automation-dashboard.png"
+            src="/images/resultados.png"
             alt="Dashboard de automação de marketing"
             className="w-full h-auto rounded-lg"
           />
@@ -135,8 +136,8 @@ export default function AutomacaoMarketingPage() {
           <div className="bg-blue-900/30 border border-blue-800 p-6 rounded-lg my-8">
             <h3 className="text-xl font-bold text-blue-400 mb-2">Dica prática</h3>
             <p className="text-gray-200 mb-0">
-              Estabeleça métricas específicas para cada objetivo. Por exemplo, em vez de "aumentar leads", defina
-              "aumentar a geração de leads qualificados em 30% nos próximos 3 meses".
+              Estabeleça métricas específicas para cada objetivo. Por exemplo, em vez de &quot;aumentar leads&quot;, defina
+              &quot;aumentar a geração de leads qualificados em 30% nos próximos 3 meses&quot;.
             </p>
           </div>
 
@@ -241,7 +242,7 @@ export default function AutomacaoMarketingPage() {
           <h3>8. Monitore e otimize</h3>
 
           <p>
-            A automação de marketing não é "configurar e esquecer". Monitore regularmente os resultados e faça ajustes:
+            A automação de marketing não é &quot;configurar e esquecer&quot;. Monitore regularmente os resultados e faça ajustes:
           </p>
 
           <ul>
@@ -300,8 +301,12 @@ export default function AutomacaoMarketingPage() {
           </p>
         </div>
 
+        <div className="w-fit mx-auto mt-8">
+          <Cta />
+        </div>
+
         {/* Author */}
-        <div className="mt-12 border-t border-gray-800 pt-8">
+        {/* <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex items-center gap-4">
             <img src="/professional-headshot.png" alt="Autor" className="w-16 h-16 rounded-full" />
             <div>
@@ -311,10 +316,10 @@ export default function AutomacaoMarketingPage() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Share */}
-        <div className="mt-8">
+        <div className="border-t border-gray-800 pt-8">
           <h4 className="text-lg font-bold mb-4">Compartilhe este artigo</h4>
           <div className="flex gap-3">
             <Button variant="outline" size="icon" className="rounded-full">
@@ -337,66 +342,7 @@ export default function AutomacaoMarketingPage() {
         </div>
       </article>
 
-      {/* Related Articles */}
-      <section className="relative z-10 container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold mb-8">Artigos Relacionados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=ia-agentiva" alt="IA Agentiva" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">Inteligência Artificial</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">
-                IA Agentiva: Como a Nova Geração da Inteligência Artificial Está Transformando os Negócios
-              </h3>
-              <p className="text-gray-400 mb-4">
-                Conheça como a IA agentiva está revolucionando empresas com sistemas que tomam decisões e executam ações
-                de forma autônoma.
-              </p>
-              <Link
-                href="/blog/artigos/ia-agentiva-transformando-negocios"
-                className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200"
-              >
-                Ler mais →
-              </Link>
-            </div>
-          </div>
 
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=xzwz3" alt="Futuro do CRM" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">CRM</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">O Futuro do CRM: Inteligência Artificial e Personalização</h3>
-              <p className="text-gray-400 mb-4">
-                Descubra como a IA está transformando os sistemas de CRM e criando experiências altamente
-                personalizadas.
-              </p>
-              <Link
-                href="/blog/artigos/futuro-crm-inteligencia-artificial-personalizacao"
-                className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200"
-              >
-                Ler mais →
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="/placeholder.svg?key=k38w4" alt="IA no Atendimento" className="w-full h-48 object-cover" />
-            <div className="p-6">
-              <span className="text-blue-500 text-sm font-medium">Inteligência Artificial</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">6 Casos de Sucesso de IA no Atendimento ao Cliente</h3>
-              <p className="text-gray-400 mb-4">
-                Conheça como grandes empresas estão usando IA para revolucionar o atendimento ao cliente.
-              </p>
-              <Link
-                href="/blog/artigos/casos-sucesso-ia-atendimento-cliente"
-                className="text-blue-500 font-medium hover:text-blue-400 transition-colors duration-200"
-              >
-                Ler mais →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Newsletter */}
       <section>

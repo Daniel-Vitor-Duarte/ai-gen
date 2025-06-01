@@ -63,14 +63,14 @@ export function ProductivitySection() {
 
   return (
     <section className="w-full bg-black">
-      <div className="container px-4 md:px-6">
+      <div className="container px-0 md:px-6">
         <div className="text-center relative backdrop-blur-sm bg-black/20 p-8 rounded-2xl">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-4">
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-white mb-4">
             Aumente sua Produtividade com IA
           </h2>
-          <p className="mx-auto max-w-[770px] text-gray-300 md:text-xl">
-            A Inteligência Artificial está revolucionando a forma como as empresas operam, oferecendo ganhos
-            significativos em eficiência e produtividade.
+          <p className="mx-auto max-w-[770px] text-gray-300 md:text-xl md:px-0 px-4">
+            A Inteligência Artificial está revolucionando a forma como <br className="md:hidden" /> as empresas operam, oferecendo ganhos
+            significativos em eficiência <br className="md:hidden" /> e produtividade.
           </p>
         </div>
 

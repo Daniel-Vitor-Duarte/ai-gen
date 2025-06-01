@@ -28,7 +28,7 @@ export function BenefitsSection() {
     <section id="benefits" className="w-full bg-black lg:py-20 py-12">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white mb-4">
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-white mb-4">
             Benefícios da Solução
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto" />
@@ -41,11 +41,11 @@ export function BenefitsSection() {
               className="group relative overflow-hidden rounded-lg bg-gray-900/50 p-6 backdrop-blur-sm 
                         transition-all duration-300 hover:bg-gray-800/50 hover:shadow-2xl hover:shadow-blue-500/10"
             >
-              <div className="mb-4 inline-block rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 p-3 text-white">
-                <benefit.icon className="h-6 w-6" />
+              <div className="mb-4 md:inline-block w-fit mx-auto rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 p-3 text-white ">
+                <benefit.icon className="h-6 w-6 " />
               </div>
-              <h3 className="mb-2 text-xl font-semibold text-white">{benefit.title}</h3>
-              <p className="text-gray-300">{benefit.description}</p>
+              <h3 className="mb-2 text-xl font-semibold text-white md:text-left text-center">{benefit.title}</h3>
+              <p className="text-gray-300 md:text-left text-center md:w-auto w-[15.5rem] mx-auto">{benefit.description}</p>
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/20 rounded-lg transition-colors duration-300" />
             </div>
           ))}
