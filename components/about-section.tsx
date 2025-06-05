@@ -88,9 +88,8 @@ export function AboutSection() {
         <section
           key={section.id}
           id={section.id}
-          className={`relative z-10 ${
-            index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-          } flex flex-col lg:flex-row items-center gap-12 lg:gap-24`}
+          className={`relative z-10 ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+            } flex flex-col lg:flex-row items-center gap-12 lg:gap-24`}
         >
           <div className="flex-1 space-y-6">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600">
@@ -102,7 +101,7 @@ export function AboutSection() {
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">{section.content}</p>
 
-            {section.id === "team" && (
+            {section.id === "team" && section.team && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                 {section.team.map((member) => (
                   <Card key={member.name} className="overflow-hidden">
@@ -126,7 +125,7 @@ export function AboutSection() {
             )}
           </div>
 
-          {section.id !== "team" && section.id !== "differentials" &&  (
+          {section.id !== "team" && section.id !== "differentials" && (
             <div className="flex-1 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl" />
               <Image

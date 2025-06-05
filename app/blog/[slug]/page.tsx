@@ -1,9 +1,10 @@
 "use client"
-import { useEffect } from "react"
+import { useEffect, use } from "react";
 import { Button } from "@/components/ui/button"
 import { MainNav } from "@/components/main-nav"
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default function BlogPost(props: { params: Promise<{ slug: string }> }) {
+  const params = use(props.params);
   useEffect(() => {
     // Redirect to the article page
     window.location.href = `/blog/artigos/${params.slug}`
