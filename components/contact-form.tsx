@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
@@ -267,9 +267,11 @@ export function ContactForm() {
                             className="px-3 py-2"
                           >
                             <div className="flex items-center gap-3">
-                              <img
+                              <Image
                                 src={country.img || "/placeholder.svg"}
                                 alt={`Bandeira ${country.pais}`}
+                                width={20}
+                                height={12}
                                 className="w-5 h-3 object-cover rounded-sm"
                               />
                               <span className="font-medium">
