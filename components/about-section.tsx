@@ -10,7 +10,7 @@ const sections = [
     content: `A AIG nasceu da paixão pela tecnologia e da visão de um futuro onde a inteligência artificial não apenas automatiza processos, mas também personaliza e humaniza o atendimento ao cliente. Desde o lançamento do ChatGPT, observamos o potencial revolucionário da IA e, em 2024, decidimos unir forças para criar soluções inovadoras que transformam empresas, tornando-as mais produtivas e eficientes.
 
     Nossa missão é clara: impulsionar o progresso. Acreditamos que a evolução tecnológica deve ser utilizada para otimizar operações, melhorar a experiência do cliente e permitir que negócios alcancem seu máximo potencial. Trabalhamos para ajudar empresas a crescer, eliminando tarefas repetitivas e permitindo que gestores e equipes foquem no que realmente importa: inovação e estratégia.`,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/missao.png",
     icon: Target,
   },
   {
@@ -18,7 +18,7 @@ const sections = [
     title: "Nossos Valores",
     subtitle: "Razão, integridade e busca pela excelência",
     content: `Na AIG, guiamos nossas ações por três pilares fundamentais: razão, integridade e busca pela excelência. Acreditamos que a racionalidade e o pensamento independente são as chaves para criar soluções inovadoras. Nossa transparência e compromisso com a verdade fortalecem a confiança com nossos clientes e parceiros. Acima de tudo, buscamos excelência em tudo o que fazemos, desafiando constantemente o status quo para entregar o melhor resultado possível.`,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/valores.png",
     icon: Award,
   },
   {
@@ -26,7 +26,7 @@ const sections = [
     title: "Como a IA Está Transformando Empresas",
     subtitle: "O impacto e as oportunidades no Brasil",
     content: `Enxergamos um Brasil onde o atendimento ao cliente se tornará referência mundial, onde cada cliente se sinta respeitado e valorizado. Visualizamos um mercado onde as empresas encontram os clientes ideais com facilidade e onde a produtividade cresce exponencialmente graças à automação inteligente. Nossa missão é eliminar trabalhos repetitivos e desnecessários, permitindo que os negócios prosperem com base na criatividade e estratégia de seus líderes.`,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/transformando.png",
     icon: Brain,
   },
   {
@@ -37,19 +37,19 @@ const sections = [
       "Nossa equipe traz uma combinação única de habilidades para criar soluções eficientes e sob medida para cada cliente.",
     team: [
       {
-        name: "Davi Silva",
+        name: "Davi Kastro",
         role: "Especialista em Desenvolvimento Full-Stack",
         image: "/placeholder.svg?height=300&width=300",
         bio: "Especialista em desenvolvimento full-stack e automação, com foco em soluções escaláveis e eficientes.",
       },
       {
-        name: "Bruno Santos",
+        name: "Bruno Vieira",
         role: "Estrategista de IA",
         image: "/placeholder.svg?height=300&width=300",
         bio: "Especialista em estratégia de IA e otimização de prompts, com foco em maximizar o potencial da tecnologia.",
       },
       {
-        name: "Daniel Costa",
+        name: "Daniel Duarte",
         role: "Especialista em TI e Negócios",
         image: "/placeholder.svg?height=300&width=300",
         bio: "Especialista em TI e expansão de negócios, com vasta experiência em implementação de soluções tecnológicas.",
@@ -76,7 +76,7 @@ const sections = [
     content: `Nosso foco é expandir e aprimorar nossas soluções de captura de leads e atendimento humanizado, garantindo que empresas tenham uma comunicação eficiente e personalizada com seus clientes. Além disso, visamos ampliar nossos serviços para incluir tráfego pago e criação de landing pages otimizadas, oferecendo uma solução completa para impulsionar negócios no ambiente digital.
 
     Estamos apenas começando. O futuro da inteligência artificial no Brasil é promissor, e a AIG está pronta para liderar essa transformação.`,
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/futuro.png",
     icon: TrendingUp,
   },
 ]

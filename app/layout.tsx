@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato, Geist } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const lato = Lato({
   weight: ["700"],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={`${lato.className} ${geist.className}`}>
       <body>
         {children}
+        <SpeedInsights />
         <Toaster />
       </body>
     </html>
