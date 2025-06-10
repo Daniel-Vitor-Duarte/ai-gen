@@ -77,9 +77,33 @@ export async function getAllArticles(): Promise<Article[]> {
     const articles = articlesData
       .filter((article): article is Article => article !== null)
       .sort((a, b) => {
-        // Parse dates and sort (assuming date format is consistent)
-        const dateA = new Date(a.date.split(" de ").reverse().join(" "))
-        const dateB = new Date(b.date.split(" de ").reverse().join(" "))
+        const parseDate = (date: string) => {
+          const [day, month, year] = date
+            .toLowerCase()
+            .split(" de ")
+            .map((p) => p.trim())
+
+          const months: Record<string, number> = {
+            janeiro: 0,
+            fevereiro: 1,
+            março: 2,
+            abril: 3,
+            maio: 4,
+            junho: 5,
+            julho: 6,
+            agosto: 7,
+            setembro: 8,
+            outubro: 9,
+            novembro: 10,
+            dezembro: 11,
+          }
+
+          const monthIndex = months[month] ?? 0
+          return new Date(Number(year), monthIndex, Number(day))
+        }
+
+        const dateA = parseDate(a.date)
+        const dateB = parseDate(b.date)
         return dateB.getTime() - dateA.getTime()
       })
 

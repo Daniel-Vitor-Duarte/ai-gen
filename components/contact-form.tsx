@@ -34,7 +34,7 @@ const formatPhoneNumber = (value: string, ddi: string) => {
   const numbers = value.replace(/\D/g, "");
 
   // Format based on DDI
-  if (ddi === "+55") {
+  if (ddi === "55") {
     // Brazilian format
     if (numbers.length <= 11) {
       let formatted = numbers;
@@ -57,7 +57,7 @@ const formatPhoneNumber = (value: string, ddi: string) => {
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [showEmailError, setShowEmailError] = React.useState(false);
-  const [selectedDDI, setSelectedDDI] = React.useState("+55");
+  const [selectedDDI, setSelectedDDI] = React.useState("55");
   const emailTimeoutRef = useRef<NodeJS.Timeout>(null);
   const [submitError, setSubmitError] = React.useState<string | null>(null);
 
@@ -66,7 +66,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
-      ddi: "+55",
+      ddi: "55",
       phone: "",
     },
   });
@@ -273,7 +273,7 @@ export function ContactForm() {
                                 className="w-5 h-3 object-cover rounded-sm"
                               />
                               <span className="font-medium">
-                                {country.ddi}
+                                +{country.ddi}
                               </span>
                             </div>
                           </SelectItem>
@@ -296,7 +296,7 @@ export function ContactForm() {
                       <Input
                         type="tel"
                         placeholder={
-                          selectedDDI === "+55"
+                          selectedDDI === "55"
                             ? "(99) 99999-9999"
                             : "999999999999"
                         }
@@ -308,13 +308,13 @@ export function ContactForm() {
                           );
                           field.onChange(formatted);
                         }}
-                        maxLength={selectedDDI === "+55" ? 15 : 15}
+                        maxLength={selectedDDI === "55" ? 15 : 15}
                         className={`pr-10 ${
                           !field.value
                             ? ""
-                            : (selectedDDI === "+55" &&
+                            : (selectedDDI === "55" &&
                                 field.value.replace(/\D/g, "").length === 11) ||
-                              (selectedDDI !== "+55" &&
+                              (selectedDDI !== "55" &&
                                 field.value.replace(/\D/g, "").length >= 8)
                             ? "border-green-500 focus-visible:ring-green-500"
                             : ""
@@ -322,9 +322,9 @@ export function ContactForm() {
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2">
                         {field.value &&
-                          ((selectedDDI === "+55" &&
+                          ((selectedDDI === "55" &&
                             field.value.replace(/\D/g, "").length === 11) ||
-                          (selectedDDI !== "+55" &&
+                          (selectedDDI !== "55" &&
                             field.value.replace(/\D/g, "").length >= 8) ? (
                             <svg
                               className="h-5 w-5 text-green-500"
