@@ -21,18 +21,18 @@ const stats = [
 
   },
   {
-    category: "Prospecção",
-    title: "5 Estratégias de Prospecção Automatizada que Realmente Funcionam",
-    excerpt: "Conheça as melhores práticas para automatizar sua prospecção e gerar leads qualificados de forma consistente.",
-    slug: "estrategias-prospeccao-automatizada",
-    image: "/images/interconnected-marketing-flow.png",
+    category: "Atendimento",
+    title: "Casos de Sucesso: IA Revolucionando o Atendimento ao Cliente",
+    excerpt: " Conheça como grandes empresas estão usando inteligência artificial para revolucionar o atendimento e aumentar a satisfação dos clientes.",
+    slug: "casos-sucesso-ia-atendimento-cliente",
+    image: "/images/sucesso.jpg",
   },
   {
-    category: "Atendimento",
-    title: "Inteligência Artificial no Atendimento ao Cliente: Casos de Sucesso",
-    excerpt: "Veja como empresas estão usando IA para melhorar o atendimento e aumentar a satisfação dos clientes.",
-    slug: "inteligencia-artificial-atendimento-cliente",
-    image: "/images/digital-agent-interface.png",
+    category: "Automação de Marketing",
+    title: "Como Implementar Automação de Marketing com Resultados Reais",
+    excerpt: "Guia prático para implementar automação de marketing que gera leads qualificados e aumenta a conversão.",
+    slug: "implementar-automacao-marketing-resultados",
+    image: "/images/resultados.png",
   },
 ]
 
@@ -91,7 +91,7 @@ export function ProductivitySection() {
                       </div>
                       <div className="w-full md:w-1/2 flex flex-col justify-center">
                         <span className="text-blue-500 text-sm font-medium mb-2">{item.category}</span>
-                        <h3 className="text-3xl font-semibold text-white mb-4">{item.title}</h3>
+                        <h3 className={`text-3xl font-semibold text-white mb-4 ${index == 1 ? 'max-w-[30rem]' : '' }`}>{item.title}</h3>
                         <p className="text-gray-300 mb-6 text-lg">{item.excerpt}</p>
                         <Link
                           href={`/blog/${item.slug}`}
