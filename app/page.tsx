@@ -120,6 +120,7 @@ export default function Hero() {
         <ContactSection />
       </div>
       <Footer />
+      
     </main>
   )
 }

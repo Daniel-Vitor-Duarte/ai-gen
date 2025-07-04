@@ -127,13 +127,13 @@ export function AboutSection() {
 
           {section.id !== "team" && section.id !== "differentials" && (
             <div className="flex-1 relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl" />
+              <div className={`absolute inset-0 bg-gradient-to-r from-blue-600/20 to-indigo-600/20 rounded-2xl blur-2xl`} />
               <Image
                 src={section.image || "/placeholder.svg"}
                 alt={section.title}
                 width={600}
                 height={400}
-                className={`relative rounded-2xl w-full object-cover`}
+                className={`relative rounded-2xl w-full object-cover ${section.id === "values" ? "" : ""}`}
               />
             </div>
           )}

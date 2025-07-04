@@ -3,15 +3,15 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const contactInfo = {
   address: {
-    street: "Av. Paulista, 1000",
-    complement: "10º andar",
-    city: "São Paulo",
-    state: "SP",
+    // street: "Av. Paulista, 1000",
+    // complement: "10º andar",
+    city: "Brasília",
+    state: "DF",
     country: "Brasil",
-    postal: "01310-100",
+    // postal: "01310-100",
   },
-  phone: "+55 11 3456-7890",
-  email: "contato@aigen.com.br",
+  phone: "+55 61 9 9841-8665",
+  email: "contato.aigen@gmail.com",
 };
 
 export function ContactPageContent() {
@@ -44,14 +44,14 @@ export function ContactPageContent() {
                   <MapPin className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Endereço</h3>
+                  <h3 className="font-semibold">Local</h3>
                   <address className="not-italic text-gray-600 space-y-1">
-                    <p>{contactInfo.address.street}</p>
-                    <p>{contactInfo.address.complement}</p>
+                    {/* <p>{contactInfo.address.street}</p>
+                    <p>{contactInfo.address.complement}</p> */}
                     <p>
                       {contactInfo.address.city}, {contactInfo.address.state}
                     </p>
-                    <p>{contactInfo.address.postal}</p>
+                    {/* <p>{contactInfo.address.postal}</p> */}
                     <p>{contactInfo.address.country}</p>
                   </address>
                 </div>
@@ -92,14 +92,14 @@ export function ContactPageContent() {
               </div>
             </div>
 
-            <div className="mt-8 rounded-xl border border-gray-200 p-6">
+            {/* <div className="mt-8 rounded-xl border border-gray-200 p-6">
               <h3 className="font-semibold">Horário de Atendimento</h3>
               <div className="mt-3 space-y-2 text-gray-600">
                 <p>Segunda a Sexta: 9h às 18h</p>
                 <p>Sábado: 9h às 13h</p>
                 <p>Domingo: Fechado</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

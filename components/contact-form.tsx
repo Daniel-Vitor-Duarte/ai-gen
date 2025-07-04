@@ -28,6 +28,10 @@ import {
 } from "@/lib/types";
 import { toast } from "sonner";
 import { useRef } from "react";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+
+
 
 const formatPhoneNumber = (value: string, ddi: string) => {
   // Remove non-digits
@@ -118,12 +122,17 @@ export function ContactForm() {
     }
   }
 
+  const pathname = usePathname();
+
+  const textClass = clsx(pathname === "/contato" ? "text-[#161616]" : "text-accent");
+
   return (
     <div className="w-full max-w-md mx-auto">
       <Form {...form}>
+        {/* text style */}
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-3 text-accent"
+          className={`space-y-3 text-accent ${textClass}`}
         >
           <FormField
             control={form.control}
@@ -150,15 +159,14 @@ export function ContactForm() {
                       type="email"
                       placeholder="seu@email.com"
                       {...field}
-                      className={`pr-10 ${
-                        !field.value
+                      className={`pr-10 ${!field.value
                           ? ""
                           : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)
-                          ? "border-green-500 focus-visible:ring-green-500"
-                          : showEmailError
-                          ? "border-red-500 focus-visible:ring-red-500"
-                          : ""
-                      }`}
+                            ? "border-green-500 focus-visible:ring-green-500"
+                            : showEmailError
+                              ? "border-red-500 focus-visible:ring-red-500"
+                              : ""
+                        }`}
                       onChange={(e) => {
                         field.onChange(e);
                         // validateEmail(e.target.value);
@@ -309,23 +317,22 @@ export function ContactForm() {
                           field.onChange(formatted);
                         }}
                         maxLength={selectedDDI === "55" ? 15 : 15}
-                        className={`pr-10 ${
-                          !field.value
+                        className={`pr-10 ${!field.value
                             ? ""
                             : (selectedDDI === "55" &&
-                                field.value.replace(/\D/g, "").length === 11) ||
+                              field.value.replace(/\D/g, "").length === 11) ||
                               (selectedDDI !== "55" &&
                                 field.value.replace(/\D/g, "").length >= 8)
-                            ? "border-green-500 focus-visible:ring-green-500"
-                            : ""
-                        }`}
+                              ? "border-green-500 focus-visible:ring-green-500"
+                              : ""
+                          }`}
                       />
                       <div className="absolute right-3 top-1/2 -translate-y-1/2">
                         {field.value &&
                           ((selectedDDI === "55" &&
                             field.value.replace(/\D/g, "").length === 11) ||
-                          (selectedDDI !== "55" &&
-                            field.value.replace(/\D/g, "").length >= 8) ? (
+                            (selectedDDI !== "55" &&
+                              field.value.replace(/\D/g, "").length >= 8) ? (
                             <svg
                               className="h-5 w-5 text-green-500"
                               fill="none"
