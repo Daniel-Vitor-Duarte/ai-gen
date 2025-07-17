@@ -44,6 +44,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${lato.className} ${geist.className}`}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="QMSOkaqxsXZzibvg49qJjlwTNIozWkXyT4e-PbtOlTU"
+        />
+      </head>
       <body>
         {children}
         <SpeedInsights />
