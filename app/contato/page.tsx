@@ -7,6 +7,18 @@ import Particles from "react-tsparticles"
 import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { ContactPageContent } from "@/components/contact-page-content"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contato",
+  description: "Fale conosco para saber mais sobre nossas soluções de automação e IA.",
+  openGraph: {
+    title: "Contato",
+    description:
+      "Fale conosco para saber mais sobre nossas soluções de automação e IA.",
+    url: "/contato",
+  },
+}
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false)

@@ -12,6 +12,20 @@ import { FaqSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { ChevronDown } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Automação Inteligente para Escalar suas Vendas",
+  description:
+    "Prospecção automatizada, atendimento inteligente e gestão eficiente para transformar leads em clientes.",
+  openGraph: {
+    title: "Automação Inteligente para Escalar suas Vendas",
+    description:
+      "Prospecção automatizada, atendimento inteligente e gestão eficiente para transformar leads em clientes.",
+    url: "/",
+    images: ["/images/sucesso.jpg"],
+  },
+}
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)

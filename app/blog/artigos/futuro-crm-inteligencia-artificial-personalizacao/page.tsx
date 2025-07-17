@@ -4,6 +4,20 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Twitter, Facebook, Linkedin, Share2 } from "lucide-react"
 import { Newsletter } from "@/app/components/Newsletter/newsletter"
 import Cta from "@/app/Cta"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "O Futuro do CRM: Inteligência Artificial e Personalização",
+  description:
+    "Descubra como a IA está transformando os sistemas de CRM e criando experiências altamente personalizadas.",
+  openGraph: {
+    title: "O Futuro do CRM: Inteligência Artificial e Personalização",
+    description:
+      "Descubra como a IA está transformando os sistemas de CRM e criando experiências altamente personalizadas.",
+    url: "/blog/artigos/futuro-crm-inteligencia-artificial-personalizacao",
+    images: ["/images/sucesso.jpg"],
+  },
+}
 
 export default function FuturoCRMPage() {
   return (

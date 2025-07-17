@@ -14,8 +14,27 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "AIG",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
+  ),
+  title: {
+    default: "AIG",
+    template: "%s | AIG",
+  },
   description: "Automação e Inteligência Artificial aplicados na sua empresa",
+  openGraph: {
+    title: "AIG",
+    description:
+      "Automação e Inteligência Artificial aplicados na sua empresa",
+    url: "/",
+    siteName: "AIG",
+    locale: "pt_BR",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

@@ -3,6 +3,20 @@ import { MainNav } from "@/components/main-nav"
 import { ArrowLeft } from "lucide-react"
 import { Newsletter } from "@/app/components/Newsletter/newsletter"
 import Share from "@/app/components/Share"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Casos de Sucesso: IA Revolucionando o Atendimento ao Cliente",
+  description:
+    "Conheça como grandes empresas estão usando inteligência artificial para revolucionar o atendimento e aumentar a satisfação dos clientes.",
+  openGraph: {
+    title: "Casos de Sucesso: IA Revolucionando o Atendimento ao Cliente",
+    description:
+      "Conheça como grandes empresas estão usando inteligência artificial para revolucionar o atendimento e aumentar a satisfação dos clientes.",
+    url: "/blog/artigos/casos-sucesso-ia-atendimento-cliente",
+    images: ["/images/sucesso.jpg"],
+  },
+}
 
 export default function CasosSucessoIAPage() {
   return (

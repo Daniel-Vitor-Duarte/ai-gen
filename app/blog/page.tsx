@@ -2,6 +2,19 @@ import { MainNav } from "@/components/main-nav"
 import { getAllArticles } from "@/lib/get-articles"
 import BlogClient from "./client"
 import { Newsletter } from "../components/Newsletter/newsletter"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Artigos, dicas e estratégias sobre automação de vendas, prospecção e atendimento inteligente",
+  openGraph: {
+    title: "Blog",
+    description:
+      "Artigos, dicas e estratégias sobre automação de vendas, prospecção e atendimento inteligente",
+    url: "/blog",
+  },
+}
 
 // Make this a Server Component to fetch articles at build time
 export default async function BlogPage() {

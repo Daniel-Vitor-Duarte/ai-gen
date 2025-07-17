@@ -7,6 +7,17 @@ import Particles from "react-tsparticles"
 import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { AboutSection } from "@/components/about-section"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Sobre Nós",
+  description: "Conheça mais sobre a AIG e nossa missão de automatizar vendas com inteligência.",
+  openGraph: {
+    title: "Sobre Nós",
+    description: "Conheça mais sobre a AIG e nossa missão de automatizar vendas com inteligência.",
+    url: "/sobre-nos",
+  },
+}
 
 export default function AboutPage() {
   const [mounted, setMounted] = useState(false)
