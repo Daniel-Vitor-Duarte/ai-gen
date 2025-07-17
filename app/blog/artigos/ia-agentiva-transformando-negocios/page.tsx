@@ -3,6 +3,21 @@ import { MainNav } from "@/components/main-nav"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Twitter, Facebook, Linkedin, Share2 } from "lucide-react"
 import { Newsletter } from "@/app/components/Newsletter/newsletter"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "IA Agentiva: Como a Nova Geração da Inteligência Artificial Está Transformando os Negócios",
+  description:
+    "Conheça como a IA agentiva está revolucionando empresas com sistemas que tomam decisões e executam ações de forma autônoma.",
+  openGraph: {
+    title:
+      "IA Agentiva: Como a Nova Geração da Inteligência Artificial Está Transformando os Negócios",
+    description:
+      "Conheça como a IA agentiva está revolucionando empresas com sistemas que tomam decisões e executam ações de forma autônoma.",
+    url: "/blog/artigos/ia-agentiva-transformando-negocios",
+    images: ["/images/ia-agentiva-negocios.png"],
+  },
+}
 
 export default function IAAgentivaPage() {
   return (

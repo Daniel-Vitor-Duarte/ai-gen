@@ -4,6 +4,20 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft, Twitter, Facebook, Linkedin, Share2 } from "lucide-react"
 import { Newsletter } from "@/app/components/Newsletter/newsletter"
 import Cta from "@/app/Cta"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Como Implementar Automação de Marketing com Resultados Reais",
+  description:
+    "Guia prático para implementar automação de marketing que gera leads qualificados e aumenta a conversão.",
+  openGraph: {
+    title: "Como Implementar Automação de Marketing com Resultados Reais",
+    description:
+      "Guia prático para implementar automação de marketing que gera leads qualificados e aumenta a conversão.",
+    url: "/blog/artigos/implementar-automacao-marketing-resultados",
+    images: ["/images/resultados.png"],
+  },
+}
 
 export default function AutomacaoMarketingPage() {
   return (
